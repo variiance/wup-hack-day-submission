@@ -12,25 +12,25 @@ struct Provider: TimelineProvider {
     
     func placeholder(in context: Context) -> BalanceEntry {
         BalanceEntry(date: Date(),
-                     balanceViewModel: .init(balance: 123,
+                     balanceViewModel: .init(balance: "123 HUF",
                                              message: "Tele vagy!!4",
-                                             health: 0.1))
+                                             health: .drowningInMoney))
     }
 
     func getSnapshot(in context: Context, completion: @escaping (BalanceEntry) -> ()) {
         let entry = BalanceEntry(date: Date(),
-                                 balanceViewModel: .init(balance: 123,
+                                 balanceViewModel: .init(balance: "123 HUF",
                                                          message: "Tele vagy!!4",
-                                                         health: 0.1))
+                                                         health: .drowningInMoney))
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 1, to: Date())!
         let entry = BalanceEntry(date: Date(),
-                                 balanceViewModel: .init(balance: 123,
+                                 balanceViewModel: .init(balance: "123 HUF",
                                                          message: "Tele vagy!!4",
-                                                         health: 0.1))
+                                                         health: .drowningInMoney))
         let timeline = Timeline(entries: [entry], policy: .after(nextUpdateDate))
 
         completion(timeline)
@@ -66,15 +66,15 @@ struct RafinaltBankWidget: Widget {
 struct RafinaltBankWidget_Previews: PreviewProvider {
     static var previews: some View {
         RafinaltBankWidgetEntryView(entry: BalanceEntry(date: Date(),
-                                                        balanceViewModel: .init(balance: 123,
+                                                        balanceViewModel: .init(balance: "123 HUF",
                                                                                 message: "Tele vagy!!4",
-                                                                                health: 0.9)))
+                                                                                health: .drowningInMoney)))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
         
         RafinaltBankWidgetEntryView(entry: BalanceEntry(date: Date(),
-                                                        balanceViewModel: .init(balance: 123,
+                                                        balanceViewModel: .init(balance: "123 HUF",
                                                                                 message: "Tele vagy!!4",
-                                                                                health: 0.9)))
+                                                                                health: .drowningInMoney)))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
             .redacted(reason: .placeholder)
     }

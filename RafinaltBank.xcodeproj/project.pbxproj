@@ -21,6 +21,7 @@
 		319ED3A52657A90A00C6783A /* RafinaltBankWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 319ED3972657A90800C6783A /* RafinaltBankWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		319ED3AC2657AA3D00C6783A /* BalanceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED38B26579BAF00C6783A /* BalanceDataSource.swift */; };
 		319ED3AD2657ABA000C6783A /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED3AA2657A9F800C6783A /* BalanceView.swift */; };
+		319ED3AF2657B2CA00C6783A /* BalanceViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED3AE2657B2CA00C6783A /* BalanceViewModelBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		319ED3A02657A90A00C6783A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		319ED3A22657A90A00C6783A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		319ED3AA2657A9F800C6783A /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		319ED3AE2657B2CA00C6783A /* BalanceViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewModelBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				319ED37C26579B8700C6783A /* RafinaltBankApp.swift */,
 				319ED38B26579BAF00C6783A /* BalanceDataSource.swift */,
 				319ED3912657A7AA00C6783A /* RandomOrgAPI.swift */,
+				319ED3AE2657B2CA00C6783A /* BalanceViewModelBuilder.swift */,
 				319ED38D26579CEE00C6783A /* Keys.swift */,
 				319ED37E26579B8700C6783A /* ContentView.swift */,
 				319ED38026579B8900C6783A /* Assets.xcassets */,
@@ -253,6 +256,7 @@
 				319ED3922657A7AA00C6783A /* RandomOrgAPI.swift in Sources */,
 				319ED38C26579BAF00C6783A /* BalanceDataSource.swift in Sources */,
 				319ED37D26579B8700C6783A /* RafinaltBankApp.swift in Sources */,
+				319ED3AF2657B2CA00C6783A /* BalanceViewModelBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

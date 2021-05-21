@@ -14,6 +14,7 @@ enum RandomOrgAPI {
     
     private enum Constants {
         static let base = "api.random.org"
+        static let apiVersion = 2
         static let minBalance = 0
         static let maxBalance = 100_000
     }
@@ -29,9 +30,11 @@ extension RandomOrgAPI {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
         urlComponents.host = Constants.base
-        urlComponents.path = "json-rpc/4/invoke/generateIntegers"
+        urlComponents.path = "json-rpc/\(Constants.apiVersion)/invoke/generateIntegers"
         urlComponents.queryItems = [
-            //            URLQueryItem(name: "i", value: "1+2")
+            URLQueryItem(name: "num", value: "1"),
+            URLQueryItem(name: "min", value: String(Constants.minBalance)),
+            URLQueryItem(name: "max", value: String(Constants.maxBalance))
         ]
         
         return .init(url: urlComponents.url!)

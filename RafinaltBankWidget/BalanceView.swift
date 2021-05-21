@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 struct BalanceView: View {
     
@@ -13,22 +14,26 @@ struct BalanceView: View {
     
     var body: some View {
         VStack(spacing: 16) {
-            Text(String(balanceViewModel.balance))
-                .font(.title)
-                .foregroundColor(healthColor(from: balanceViewModel.health))
+            HStack {
+                Image(systemName: "dollarsign.circle.fill")
+                
+                Text(balanceViewModel.balance)
+            }
+            .font(.title3)
+            .foregroundColor(healthColor(from: balanceViewModel.health))
             
             Text(balanceViewModel.message)
                 .font(.subheadline)
         }
     }
     
-    private func healthColor(from health: Double) -> Color {
+    private func healthColor(from health: FinancialHealth) -> Color {
         switch health {
-        case 0..<0.33:
+        case .broke:
             return .red
-        case 0.33..<0.66:
+        case .ok:
             return .yellow
-        default:
+        case .drowningInMoney:
             return .green
         }
     }
@@ -37,6 +42,9 @@ struct BalanceView: View {
 struct BalanceView_Previews: PreviewProvider {
     
     static var previews: some View {
-        BalanceView(balanceViewModel: .init(balance: 123, message: "Tele vagy!!4", health: 0.1))
+        BalanceView(balanceViewModel: .init(balance: "123 HUF",
+                                            message: "Tele vagy!!4",
+                                            health: .drowningInMoney))
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

@@ -31,11 +31,21 @@ final class BalanceDataSource {
 }
 
 struct BalanceResponse: Codable {
-    let balance: Int
+    let random: Results
+}
+
+struct Results: Codable {
+    let data: [Int]
+}
+
+enum FinancialHealth {
+    case broke
+    case ok
+    case drowningInMoney
 }
 
 struct BalanceViewModel {
-    let balance: Int
+    let balance: String
     let message: String
-    let health: Double
+    let health: FinancialHealth
 }
