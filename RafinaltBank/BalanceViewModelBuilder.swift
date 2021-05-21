@@ -9,7 +9,7 @@ import Foundation
 
 struct BalanceViewModelBuilder {
     
-    private enum Constants {
+    enum Constants {
         static let minBalance = 0
         static let maxBalance = 100_000
     }
@@ -18,13 +18,22 @@ struct BalanceViewModelBuilder {
         let formatter = NumberFormatter()
         formatter.formatterBehavior = .behavior10_4
         formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 0
         formatter.locale = Locale(identifier: "HU_hu")
         
         return formatter
     }()
     
     func build(using response: BalanceResponse) -> BalanceViewModel {
-        let balance = response.random.data[0]
+        let balance = response.result.random.data[0]
+        let formattedBalance = currencyFormatter.string(from: balance as NSNumber)!
+        let health = financialHealth(from: balance)
+        let message = message(using: health)
+        
+        return .init(balance: formattedBalance, message: message, health: health)
+    }
+    
+    func build(using balance: Int) -> BalanceViewModel {
         let formattedBalance = currencyFormatter.string(from: balance as NSNumber)!
         let health = financialHealth(from: balance)
         let message = message(using: health)

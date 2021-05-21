@@ -22,6 +22,9 @@
 		319ED3AC2657AA3D00C6783A /* BalanceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED38B26579BAF00C6783A /* BalanceDataSource.swift */; };
 		319ED3AD2657ABA000C6783A /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED3AA2657A9F800C6783A /* BalanceView.swift */; };
 		319ED3AF2657B2CA00C6783A /* BalanceViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED3AE2657B2CA00C6783A /* BalanceViewModelBuilder.swift */; };
+		319ED3B02657CE1C00C6783A /* RandomOrgAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED3912657A7AA00C6783A /* RandomOrgAPI.swift */; };
+		319ED3B12657CF5900C6783A /* BalanceViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED3AE2657B2CA00C6783A /* BalanceViewModelBuilder.swift */; };
+		319ED3B22657CFC500C6783A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED38D26579CEE00C6783A /* Keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319ED3B12657CF5900C6783A /* BalanceViewModelBuilder.swift in Sources */,
+				319ED3B22657CFC500C6783A /* Keys.swift in Sources */,
+				319ED3B02657CE1C00C6783A /* RandomOrgAPI.swift in Sources */,
 				319ED3AD2657ABA000C6783A /* BalanceView.swift in Sources */,
 				319ED39F2657A90800C6783A /* RafinaltBankWidget.swift in Sources */,
 				319ED3AC2657AA3D00C6783A /* BalanceDataSource.swift in Sources */,

@@ -31,10 +31,14 @@ final class BalanceDataSource {
 }
 
 struct BalanceResponse: Codable {
-    let random: Results
+    let result: BalanceResult
 }
 
-struct Results: Codable {
+struct BalanceResult: Codable {
+    let random: RandomNumberData
+}
+
+struct RandomNumberData: Codable {
     let data: [Int]
 }
 

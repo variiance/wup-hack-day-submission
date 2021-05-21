@@ -23,7 +23,9 @@ struct BalanceView: View {
             .foregroundColor(healthColor(from: balanceViewModel.health))
             
             Text(balanceViewModel.message)
-                .font(.subheadline)
+                .font(.caption)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
         }
     }
     
