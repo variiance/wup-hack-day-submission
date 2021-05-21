@@ -11,7 +11,41 @@
 		319ED37F26579B8700C6783A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED37E26579B8700C6783A /* ContentView.swift */; };
 		319ED38126579B8900C6783A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319ED38026579B8900C6783A /* Assets.xcassets */; };
 		319ED38426579B8900C6783A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319ED38326579B8900C6783A /* Preview Assets.xcassets */; };
+		319ED38C26579BAF00C6783A /* BalanceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED38B26579BAF00C6783A /* BalanceDataSource.swift */; };
+		319ED38E26579CEE00C6783A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED38D26579CEE00C6783A /* Keys.swift */; };
+		319ED3922657A7AA00C6783A /* RandomOrgAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED3912657A7AA00C6783A /* RandomOrgAPI.swift */; };
+		319ED39A2657A90800C6783A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319ED3992657A90800C6783A /* WidgetKit.framework */; };
+		319ED39C2657A90800C6783A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319ED39B2657A90800C6783A /* SwiftUI.framework */; };
+		319ED39F2657A90800C6783A /* RafinaltBankWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED39E2657A90800C6783A /* RafinaltBankWidget.swift */; };
+		319ED3A12657A90A00C6783A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319ED3A02657A90A00C6783A /* Assets.xcassets */; };
+		319ED3A52657A90A00C6783A /* RafinaltBankWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 319ED3972657A90800C6783A /* RafinaltBankWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		319ED3AC2657AA3D00C6783A /* BalanceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED38B26579BAF00C6783A /* BalanceDataSource.swift */; };
+		319ED3AD2657ABA000C6783A /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319ED3AA2657A9F800C6783A /* BalanceView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		319ED3A32657A90A00C6783A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 319ED37126579B8600C6783A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 319ED3962657A90800C6783A;
+			remoteInfo = RafinaltBankWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		319ED3A92657A90A00C6783A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				319ED3A52657A90A00C6783A /* RafinaltBankWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		319ED37926579B8700C6783A /* RafinaltBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RafinaltBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +54,16 @@
 		319ED38026579B8900C6783A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		319ED38326579B8900C6783A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		319ED38526579B8900C6783A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319ED38B26579BAF00C6783A /* BalanceDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceDataSource.swift; sourceTree = "<group>"; };
+		319ED38D26579CEE00C6783A /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		319ED3912657A7AA00C6783A /* RandomOrgAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomOrgAPI.swift; sourceTree = "<group>"; };
+		319ED3972657A90800C6783A /* RafinaltBankWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RafinaltBankWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		319ED3992657A90800C6783A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		319ED39B2657A90800C6783A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		319ED39E2657A90800C6783A /* RafinaltBankWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RafinaltBankWidget.swift; sourceTree = "<group>"; };
+		319ED3A02657A90A00C6783A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		319ED3A22657A90A00C6783A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319ED3AA2657A9F800C6783A /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +74,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		319ED3942657A90800C6783A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319ED39C2657A90800C6783A /* SwiftUI.framework in Frameworks */,
+				319ED39A2657A90800C6783A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				319ED37B26579B8700C6783A /* RafinaltBank */,
+				319ED39D2657A90800C6783A /* RafinaltBankWidget */,
+				319ED3982657A90800C6783A /* Frameworks */,
 				319ED37A26579B8700C6783A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				319ED37926579B8700C6783A /* RafinaltBank.app */,
+				319ED3972657A90800C6783A /* RafinaltBankWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				319ED37C26579B8700C6783A /* RafinaltBankApp.swift */,
+				319ED38B26579BAF00C6783A /* BalanceDataSource.swift */,
+				319ED3912657A7AA00C6783A /* RandomOrgAPI.swift */,
+				319ED38D26579CEE00C6783A /* Keys.swift */,
 				319ED37E26579B8700C6783A /* ContentView.swift */,
 				319ED38026579B8900C6783A /* Assets.xcassets */,
 				319ED38526579B8900C6783A /* Info.plist */,
@@ -69,6 +128,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		319ED3982657A90800C6783A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				319ED3992657A90800C6783A /* WidgetKit.framework */,
+				319ED39B2657A90800C6783A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		319ED39D2657A90800C6783A /* RafinaltBankWidget */ = {
+			isa = PBXGroup;
+			children = (
+				319ED39E2657A90800C6783A /* RafinaltBankWidget.swift */,
+				319ED3AA2657A9F800C6783A /* BalanceView.swift */,
+				319ED3A02657A90A00C6783A /* Assets.xcassets */,
+				319ED3A22657A90A00C6783A /* Info.plist */,
+			);
+			path = RafinaltBankWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +158,34 @@
 				319ED37526579B8700C6783A /* Sources */,
 				319ED37626579B8700C6783A /* Frameworks */,
 				319ED37726579B8700C6783A /* Resources */,
+				319ED3A92657A90A00C6783A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				319ED3A42657A90A00C6783A /* PBXTargetDependency */,
 			);
 			name = RafinaltBank;
 			productName = RafinaltBank;
 			productReference = 319ED37926579B8700C6783A /* RafinaltBank.app */;
 			productType = "com.apple.product-type.application";
+		};
+		319ED3962657A90800C6783A /* RafinaltBankWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 319ED3A62657A90A00C6783A /* Build configuration list for PBXNativeTarget "RafinaltBankWidgetExtension" */;
+			buildPhases = (
+				319ED3932657A90800C6783A /* Sources */,
+				319ED3942657A90800C6783A /* Frameworks */,
+				319ED3952657A90800C6783A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RafinaltBankWidgetExtension;
+			productName = RafinaltBankWidgetExtension;
+			productReference = 319ED3972657A90800C6783A /* RafinaltBankWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +197,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					319ED37826579B8700C6783A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					319ED3962657A90800C6783A = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -117,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				319ED37826579B8700C6783A /* RafinaltBank */,
+				319ED3962657A90800C6783A /* RafinaltBankWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +233,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		319ED3952657A90800C6783A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319ED3A12657A90A00C6783A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,11 +249,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				319ED37F26579B8700C6783A /* ContentView.swift in Sources */,
+				319ED38E26579CEE00C6783A /* Keys.swift in Sources */,
+				319ED3922657A7AA00C6783A /* RandomOrgAPI.swift in Sources */,
+				319ED38C26579BAF00C6783A /* BalanceDataSource.swift in Sources */,
 				319ED37D26579B8700C6783A /* RafinaltBankApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		319ED3932657A90800C6783A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319ED3AD2657ABA000C6783A /* BalanceView.swift in Sources */,
+				319ED39F2657A90800C6783A /* RafinaltBankWidget.swift in Sources */,
+				319ED3AC2657AA3D00C6783A /* BalanceDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		319ED3A42657A90A00C6783A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 319ED3962657A90800C6783A /* RafinaltBankWidgetExtension */;
+			targetProxy = 319ED3A32657A90A00C6783A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		319ED38626579B8900C6783A /* Debug */ = {
@@ -265,6 +396,7 @@
 		319ED38926579B8900C6783A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +419,7 @@
 		319ED38A26579B8900C6783A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +434,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hu.pavel.RafinaltBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		319ED3A72657A90A00C6783A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XL73YKJWJ;
+				INFOPLIST_FILE = RafinaltBankWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.pavel.RafinaltBank.RafinaltBankWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		319ED3A82657A90A00C6783A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XL73YKJWJ;
+				INFOPLIST_FILE = RafinaltBankWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.pavel.RafinaltBank.RafinaltBankWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +498,15 @@
 			buildConfigurations = (
 				319ED38926579B8900C6783A /* Debug */,
 				319ED38A26579B8900C6783A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		319ED3A62657A90A00C6783A /* Build configuration list for PBXNativeTarget "RafinaltBankWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				319ED3A72657A90A00C6783A /* Debug */,
+				319ED3A82657A90A00C6783A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
